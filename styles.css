@@ -1,0 +1,144 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f4f8;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+body.guest {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.hero-section {
+    position: relative;
+    background: url('elems/TSCHI\ Bldg.jpg') center/cover no-repeat;
+    height: 95vh;
+    color: white;
+    z-index: 1;
+}  
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}  
+.hero-section .text-center {
+    position: relative;
+    z-index: 1;
+}
+
+.features-section h2,
+.dev-section h2 {
+    font-size: 2rem;
+}
+
+.features-section .bi,
+.dev-section .bi {
+    font-size: 3rem;
+}
+
+
+.sign-up-btn {
+    background-color: #e3f09b;
+    border: 2px solid transparent;
+}
+.sign-up-btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #E3F09B;
+}
+
+.navbar {
+    background-color: #1F0318;
+    text-align: left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e3f09b !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: #e3f09b !important;
+    font-weight: bold;
+}
+
+.login-modal {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-left {
+    position: relative;
+    background: url('elems/TSCHI Bldg.jpg') center/cover no-repeat;
+    min-height: 400px;
+}
+
+.login-left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* dark overlay */
+    z-index: 0;
+}
+
+.login-left-content {
+    position: relative;
+    z-index: 1;
+}
+
+.login-submit-btn {
+    background-color: #E3F09B;
+    color: #1F0318;
+    border: 1px solid #E3F09B;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-submit-btn:hover {
+    background-color: transparent;
+    border: 1px solid #E3F09B;
+    color: #1F0318;
+}    
+
+.profile-pic-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic-hover img {
+    transition: 0.3s;
+}
+
+.profile-pic-hover:hover img {
+    filter: brightness(70%);
+}
+
+.profile-pic-hover span {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+}
+
+.profile-pic-hover:hover span {
+    display: block;
+}
+
+.file-card-body {
+    transition: background-color 0.2s ease;
+}
+  
+.file-card-body:hover {
+    background-color: #eaeaea; /* Light gray background on hover */
+}
+ 
+.alert .btn-close {
+    margin-top: -10px; /* adjust vertically */
+    transform: scale(0.8); /* optional: shrink for better fit */
+}
